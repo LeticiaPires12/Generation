@@ -21,11 +21,11 @@ public class ExerciciosIF {
 		System.out.println(a + "+" + b + " = " + (a + b) + " > " + c);
 		System.out.println("A soma de A + B é maior que C");
 		}
-		if(a + b < c) {
+		else if(a + b < c) {
 		System.out.println(a + "+" + b + " = " + (a + b) + " < " + c);
 		System.out.println("A soma de A + B é menor que C");
 		}
-		if(a + b == c) {
+		else  {
 		System.out.println(a + "+" + b + " = " + (a + b) + " = " + c);
 		System.out.println("A soma de A + B é igual a C");
 		
