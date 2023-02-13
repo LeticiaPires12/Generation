@@ -1,4 +1,4 @@
-package atividadeVetores;
+package exercicios;
 
 public class Exe03matriz {
 

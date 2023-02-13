@@ -1,4 +1,4 @@
-package atividadeVetores;
+package exercicios;
 
 import java.util.Scanner;
 
