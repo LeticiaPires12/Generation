@@ -8,16 +8,16 @@ public class Funcionario {
 	private String setor;
 	private int idade;
 	private float salario;
+	private int cargo;
 	
 	
-	
-	
-	public Funcionario(String nome, String cpf, String setor, int idade, float salario) {
+	public Funcionario(String nome, String cpf, String setor, int idade, float salario, int cargo) {
 		this.nome = nome;
 		this.cpf = cpf;
 		this.setor = setor;
 		this.idade = idade;
 		this.salario = salario;
+		this.cargo = cargo;
 	}
 	public String getNome() {
 		return nome;
@@ -49,11 +49,32 @@ public class Funcionario {
 	public void setSalario(float salario) {
 		this.salario = salario;
 	}
+	public int getCargo() {
+		return cargo;
+	}
+	public void setCargo(int cargo) {
+		this.cargo = cargo;
+	}
 	
 
 	public void visualizar() {
-		System.out.println("Funcionario [nome=" + this.nome + ", cpf=" + this.cpf + ", setor=" + this.setor + ", idade="
-				+ this.idade + ", salario= R$ " + this.salario+ "]");
-		
+		String cargo = "";
+
+		switch (this.cargo) {
+		case 1 -> cargo = "Gerente";
+		case 2 -> cargo = "Vendedor";
+
+		}
+		System.out.println("*******************************");
+		System.out.println("      DADOS DO FUNCIONARIO     ");
+		System.out.println("*******************************");
+		System.out.println("NOME DO FUNCIONARIO: " + this.nome);
+		System.out.println("CPF: " + this.cpf);
+		System.out.println("SETOR: " + this.setor);
+		System.out.println("IDADE: " + this.idade);
+		System.out.println("SALARIO: " + this.salario);
+		System.out.println("CARGO: " + cargo);
+
 	}
+	
 }
