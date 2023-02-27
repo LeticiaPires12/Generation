@@ -199,6 +199,7 @@ System.out.println("\nCriar Contas\n");
 			System.out.println("Valor do Saque: ");
 			valor = leia.nextFloat();
 			
+			contas.sacar(numero, valor);
 			
 			keyPress();
 			break;
@@ -211,6 +212,7 @@ System.out.println("\nCriar Contas\n");
 			System.out.println("Valor do Deposito: ");
 			valor = leia.nextFloat();
 			
+			contas.depositar(numero, valor);
 			keyPress();
 			break;
 		case 8: 
@@ -224,6 +226,8 @@ System.out.println("\nCriar Contas\n");
 			
 			System.out.println("Valor da Tranferência: ");
 			valor = leia.nextFloat();
+			
+			contas.transferir(numero, numeroDestino, valor);
 			
 			keyPress();
 			break;
